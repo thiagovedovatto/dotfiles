@@ -1,3 +1,4 @@
 .ssh/*.key
 .aws/credencials
 /etc/hosts
+.gitconfig

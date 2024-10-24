@@ -1,2 +1,5 @@
 sudo apt update
+sudo apt install pcmanfm -y
+sudo apt install terminator -y
 sudo apt upgrade -y
+sudo apt autoremove

@@ -44,3 +44,12 @@
 
 #[[layers]]
 #    name = "lang#latex"
+
+[[custom_plugins]]
+    repo = "vimwiki/vimwiki"
+    merged = false
+
+[[custom_plugins]]
+    repo = "itchyny/calendar.vim"
+    merged = false
+

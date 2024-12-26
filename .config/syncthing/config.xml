@@ -1,6 +1,9 @@
 <configuration version="35">
     <folder id="3mdju-wujdt" label="Music" path="/home/supervedovatto/Music" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
+        <device id="BJTAUBP-NJFCRMX-MH2U7YX-LR7PE5C-ZVN3W5X-4XCMHOU-Y3KFFYR-X3X6JAN" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
         <device id="IUJMDLB-INFB3KL-LGTLH5E-42XEPHP-TLIAJVB-5MP23I4-55GQYED-BMKQHQO" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
@@ -74,9 +77,6 @@
     <folder id="default" label="Default Folder" path="/home/supervedovatto/Sync" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
         <device id="IUJMDLB-INFB3KL-LGTLH5E-42XEPHP-TLIAJVB-5MP23I4-55GQYED-BMKQHQO" introducedBy="">
-            <encryptionPassword></encryptionPassword>
-        </device>
-        <device id="NXRRQSV-GHPPDNT-OCPY37P-FUFCHBM-VMFD677-U6WWNBH-NN37UAY-CY5FOQL" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
         <device id="P4CWST5-XBLP5QT-FL3SKOB-JY5DJYM-YHXYAVM-FAREWIV-PL4AXED-VX56XQD" introducedBy="">
@@ -218,7 +218,7 @@
         <caseSensitiveFS>false</caseSensitiveFS>
         <junctionsAsDirs>false</junctionsAsDirs>
     </folder>
-    <device id="IUJMDLB-INFB3KL-LGTLH5E-42XEPHP-TLIAJVB-5MP23I4-55GQYED-BMKQHQO" name="kumpalaxo" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+    <device id="BJTAUBP-NJFCRMX-MH2U7YX-LR7PE5C-ZVN3W5X-4XCMHOU-Y3KFFYR-X3X6JAN" name="SM-A156M" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
         <paused>false</paused>
         <autoAcceptFolders>false</autoAcceptFolders>
@@ -228,7 +228,7 @@
         <untrusted>false</untrusted>
         <remoteGUIPort>0</remoteGUIPort>
     </device>
-    <device id="NXRRQSV-GHPPDNT-OCPY37P-FUFCHBM-VMFD677-U6WWNBH-NN37UAY-CY5FOQL" name="Celular" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+    <device id="IUJMDLB-INFB3KL-LGTLH5E-42XEPHP-TLIAJVB-5MP23I4-55GQYED-BMKQHQO" name="kumpalaxo" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
         <paused>false</paused>
         <autoAcceptFolders>false</autoAcceptFolders>

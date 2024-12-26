@@ -5,3 +5,13 @@ startup_mode="Fullscreen"
 
 [general]
 import = ["~/.config/alacritty/themes/themes/gruvbox_light.toml"]
+live_config_reload = true
+
+[font]
+size=16
+
+[font.normal]
+family="Overpass Mono"
+
+[terminal.shell]
+program = "tmux"

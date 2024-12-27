@@ -2,7 +2,10 @@ sudo apt update
 
 sudo apt upgrade -y
 
+# Instalação do Oh My Bash
+sudo apt install curl
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+
 # Dependências do Alacritty
 sudo apt install cmake g++ pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
-
 sudo apt install tmux

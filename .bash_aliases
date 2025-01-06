@@ -24,7 +24,7 @@ fi
 alias open="xdg-open"
 alias YouCompleteMeCompile='bash ~/Documents/Programas/Shell/myscripts/YouCompleteMe-compile.sh'
 alias CleanLaTexAuxiliaryFiles='bash ~/Documents/Programas/Shell/myscripts/CleanAuxiliaryLaTexFiles.sh'
-alias poweroff='systemctl poweroff'
+alias KO='systemctl poweroff'
 alias suspend='systemctl suspend'
 alias top="htop"
 alias ran="ranger"

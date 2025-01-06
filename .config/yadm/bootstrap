@@ -9,3 +9,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/mast
 # Dependências do Alacritty
 sudo apt install cmake g++ pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
 sudo apt install tmux
+
+# Plugins do Tmux
+sudo apt install git
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

@@ -85,7 +85,8 @@ OMB_USE_SUDO=true
 # Add wisely, as too many completions slow down shell startup.
 completions=(
   git
-  composer
+  pip3
+  pip
   ssh
 )
 
@@ -148,14 +149,3 @@ set -o vi
 bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-insert 'Control-l: clear-screen'
 
-# CONFIGURAÇÕES PARA PROGRAMAS CLI ------------------------------------------------------
-
-## GnuPG
-export GPGKEY=supervedovatto
-
-## pass
-export PASSWORD_STORE_CLIP_TIME=60
-
-export VISUAL=vim
-export EDITOR="$VISUAL"
-export LC_CTYPE=pt_BR.UTF-8

@@ -22,7 +22,6 @@ fi
 
 #commands
 alias open="xdg-open"
-alias YouCompleteMeCompile='bash ~/Documents/Programas/Shell/myscripts/YouCompleteMe-compile.sh'
 alias CleanLaTexAuxiliaryFiles='bash ~/Documents/Programas/Shell/myscripts/CleanAuxiliaryLaTexFiles.sh'
 alias KO='systemctl poweroff'
 alias suspend='systemctl suspend'
@@ -34,9 +33,6 @@ alias ran="ranger"
 alias aliases="vim ~/.bash_aliases"
 alias bashrc="vim ~/.bashrc"
 alias taskrc="vim ~/.task/taskrc"
-alias bashvim="vim ~/.vim/ftplugin/sh.vim"
-#alias cafter="vim ~/.vim/after/ftplugin/c.vim"
-alias cvim="vim ~/.vim/ftplugin/c.vim"
 alias mappings="vim ~/.vim/myconfig/mappings.vim"
 alias mylinux="vim  ~/Documents/Programas/Shell/mylinux.sh"
 alias mypackages="vim ~/Documents/Programas/Shell/mypackages.sh"
@@ -55,10 +51,9 @@ alias vimrc="vim ~/.vim/vimrc"
 alias muttrc="vim ~/.mutt/muttrc"
 alias mynotes="ranger ~/Documents/MyNotes"
 alias livroc1="zathura ~/Documents/Artigos/S/Stewart-Calculovolume1-2013.pdf"
-alias abook="abook --datafile ~/Documents/addressbook"
-alias vimCC="vim ~/.vim/pluginsconfigs/CommonConfigs.vim"
-alias i3config="vim ~/.config/i3/config"
-alias i3blocksconfig="vim ~/.config/i3blocks/config"
+#alias abook="abook --datafile ~/Documents/addressbook"
+#alias i3config="vim ~/.config/i3/config"
+#alias i3blocksconfig="vim ~/.config/i3blocks/config"
 alias gvimrc="vim ~/.vim/gvimrc"
 alias vimconfigs="vim ~/Documents/Programas/config/vim/pluginsconfigs/CommonConfigs.vim"
 #alias vifmrc="vim ~/Documents/Programas/config/vifm/vifmrc"
@@ -72,11 +67,9 @@ alias ledger="ledger -f ~/Documents/Contabilidade/Ledger/main.ledger"
 #alias jabref="jabref -p ~/Documents/Programas/config/jabref/jabref.xml"
 alias bfg="java -jar /opt/bfg/bfg-1.12.16.jar"
 #alias jabref="java -jar /opt/JabRef/JabRef-4.3.1.jar"
-#alias jabref="java -jar /opt/JabRef/JabRef-4.1.jar"
-alias jabref="java -jar /opt/JabRef/JabRef-3.8.2.jar"
 alias Xreconfigure="bash ~/Documents/Programas/Shell/myscripts/RestartX.sh"
-alias slidesPE="evince ~/Documents/IFG/Disciplinas/Probabilidade\ e\ Estatística/Slides/SlidesPE.pdf"
-alias slidesGA="evince ~/Documents/IFG/Geometria\ Analítica/MateriaisOnline/Slides/Curso.pdf"
+#alias slidesPE="evince ~/Documents/IFG/Disciplinas/Probabilidade\ e\ Estatística/Slides/SlidesPE.pdf"
+#alias slidesGA="evince ~/Documents/IFG/Geometria\ Analítica/MateriaisOnline/Slides/Curso.pdf"
 
 # git aliases
 alias ga='git add'
@@ -159,14 +152,14 @@ cheatsheet () {
    curl cheat.sh/$1;
 }
 
-alias fullbackup="bash ~/Documents/Programas/BackupScripts/full_backup.sh"
 alias awsbackup="bash ~/Documents/Programas/BackupScripts/aws_backups.sh"
-alias calibrebackup="bash ~/Documents/Programas/BackupScripts/calibre.sh"
-alias reuniao="echo 'https://meet.jit.si/ProfessorThiagoVedoVatto' | xsel -ib"
-alias lattes="echo 'http://lattes.cnpq.br/1555798555635250' | xsel -ib"
-alias conda_initialize="bash ~/Documents/Programas/Shell/conda_initialize.sh"
 alias bashrc="vim ~/.bashrc"
+alias calibrebackup="bash ~/Documents/Programas/BackupScripts/calibre.sh"
+alias conda_initialize="bash ~/Documents/Programas/Shell/conda_initialize.sh"
 alias ffslice="bash ~/Documents/Programas/Shell/ffslice.sh"
+alias fullbackup="bash ~/Documents/Programas/BackupScripts/full_backup.sh"
+alias lattes="echo 'http://lattes.cnpq.br/1555798555635250' | xsel -ib"
+alias reuniao="echo 'https://meet.jit.si/ProfessorThiagoVedoVatto' | xsel -ib"
 alias whatsapp="echo 'https://wa.me/5562999529997' | xsel -ib"
 
 #source "/home/supervedovatto/Documents/Programas/Shell/measure_data_rate.sh"

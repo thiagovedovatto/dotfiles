@@ -1,6 +1,9 @@
 <configuration version="35">
     <folder id="3mdju-wujdt" label="Music" path="/home/supervedovatto/Music" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
+        <device id="BJTAUBP-NJFCRMX-MH2U7YX-LR7PE5C-ZVN3W5X-4XCMHOU-Y3KFFYR-X3X6JAN" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
         <device id="IUJMDLB-INFB3KL-LGTLH5E-42XEPHP-TLIAJVB-5MP23I4-55GQYED-BMKQHQO" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
@@ -74,9 +77,6 @@
     <folder id="default" label="Default Folder" path="/home/supervedovatto/Sync" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
         <device id="IUJMDLB-INFB3KL-LGTLH5E-42XEPHP-TLIAJVB-5MP23I4-55GQYED-BMKQHQO" introducedBy="">
-            <encryptionPassword></encryptionPassword>
-        </device>
-        <device id="NXRRQSV-GHPPDNT-OCPY37P-FUFCHBM-VMFD677-U6WWNBH-NN37UAY-CY5FOQL" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
         <device id="P4CWST5-XBLP5QT-FL3SKOB-JY5DJYM-YHXYAVM-FAREWIV-PL4AXED-VX56XQD" introducedBy="">
@@ -182,6 +182,75 @@
         <caseSensitiveFS>false</caseSensitiveFS>
         <junctionsAsDirs>false</junctionsAsDirs>
     </folder>
+    <folder id="safho-xl5qz" label="Syncthing/Celular" path="/home/supervedovatto/Syncthing/Celular" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
+        <filesystemType>basic</filesystemType>
+        <device id="IUJMDLB-INFB3KL-LGTLH5E-42XEPHP-TLIAJVB-5MP23I4-55GQYED-BMKQHQO" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <minDiskFree unit="%">1</minDiskFree>
+        <versioning>
+            <cleanupIntervalS>3600</cleanupIntervalS>
+            <fsPath></fsPath>
+            <fsType>basic</fsType>
+        </versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <maxConflicts>10</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <disableTempIndexes>false</disableTempIndexes>
+        <paused>false</paused>
+        <weakHashThresholdPct>25</weakHashThresholdPct>
+        <markerName>.stfolder</markerName>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+        <modTimeWindowS>0</modTimeWindowS>
+        <maxConcurrentWrites>2</maxConcurrentWrites>
+        <disableFsync>false</disableFsync>
+        <blockPullOrder>standard</blockPullOrder>
+        <copyRangeMethod>standard</copyRangeMethod>
+        <caseSensitiveFS>false</caseSensitiveFS>
+        <junctionsAsDirs>false</junctionsAsDirs>
+    </folder>
+    <folder id="sm-a156m_saff-fotos" label="Câmera" path="~/Câmera" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
+        <filesystemType>basic</filesystemType>
+        <device id="BJTAUBP-NJFCRMX-MH2U7YX-LR7PE5C-ZVN3W5X-4XCMHOU-Y3KFFYR-X3X6JAN" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="IUJMDLB-INFB3KL-LGTLH5E-42XEPHP-TLIAJVB-5MP23I4-55GQYED-BMKQHQO" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <minDiskFree unit="%">1</minDiskFree>
+        <versioning>
+            <cleanupIntervalS>3600</cleanupIntervalS>
+            <fsPath></fsPath>
+            <fsType>basic</fsType>
+        </versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <maxConflicts>10</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <disableTempIndexes>false</disableTempIndexes>
+        <paused>false</paused>
+        <weakHashThresholdPct>25</weakHashThresholdPct>
+        <markerName>.stfolder</markerName>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+        <modTimeWindowS>0</modTimeWindowS>
+        <maxConcurrentWrites>2</maxConcurrentWrites>
+        <disableFsync>false</disableFsync>
+        <blockPullOrder>standard</blockPullOrder>
+        <copyRangeMethod>standard</copyRangeMethod>
+        <caseSensitiveFS>false</caseSensitiveFS>
+        <junctionsAsDirs>false</junctionsAsDirs>
+    </folder>
     <folder id="wufpo-np5e5" label="Calibre" path="/home/supervedovatto/Calibre" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
         <device id="IUJMDLB-INFB3KL-LGTLH5E-42XEPHP-TLIAJVB-5MP23I4-55GQYED-BMKQHQO" introducedBy="">
@@ -218,17 +287,17 @@
         <caseSensitiveFS>false</caseSensitiveFS>
         <junctionsAsDirs>false</junctionsAsDirs>
     </folder>
-    <device id="IUJMDLB-INFB3KL-LGTLH5E-42XEPHP-TLIAJVB-5MP23I4-55GQYED-BMKQHQO" name="kumpalaxo" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+    <device id="BJTAUBP-NJFCRMX-MH2U7YX-LR7PE5C-ZVN3W5X-4XCMHOU-Y3KFFYR-X3X6JAN" name="SM-A156M" compression="metadata" introducer="true" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
         <paused>false</paused>
-        <autoAcceptFolders>false</autoAcceptFolders>
+        <autoAcceptFolders>true</autoAcceptFolders>
         <maxSendKbps>0</maxSendKbps>
         <maxRecvKbps>0</maxRecvKbps>
         <maxRequestKiB>0</maxRequestKiB>
         <untrusted>false</untrusted>
         <remoteGUIPort>0</remoteGUIPort>
     </device>
-    <device id="NXRRQSV-GHPPDNT-OCPY37P-FUFCHBM-VMFD677-U6WWNBH-NN37UAY-CY5FOQL" name="Celular" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+    <device id="IUJMDLB-INFB3KL-LGTLH5E-42XEPHP-TLIAJVB-5MP23I4-55GQYED-BMKQHQO" name="kumpalaxo" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
         <paused>false</paused>
         <autoAcceptFolders>false</autoAcceptFolders>

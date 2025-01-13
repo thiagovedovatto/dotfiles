@@ -1,0 +1,2 @@
+export DIR_ifg="$HOME/Documents/IFG"
+export DIR_QuestoesMoodle="$HOME/Documents/IFG/Disciplinas/Questões Moodle"

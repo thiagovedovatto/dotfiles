@@ -24,7 +24,7 @@ fi
 alias open="xdg-open"
 alias YouCompleteMeCompile='bash ~/Documents/Programas/Shell/myscripts/YouCompleteMe-compile.sh'
 alias CleanLaTexAuxiliaryFiles='bash ~/Documents/Programas/Shell/myscripts/CleanAuxiliaryLaTexFiles.sh'
-alias poweroff='systemctl poweroff'
+alias KO='systemctl poweroff'
 alias suspend='systemctl suspend'
 alias top="htop"
 alias ran="ranger"
@@ -167,5 +167,6 @@ alias lattes="echo 'http://lattes.cnpq.br/1555798555635250' | xsel -ib"
 alias conda_initialize="bash ~/Documents/Programas/Shell/conda_initialize.sh"
 alias bashrc="vim ~/.bashrc"
 alias ffslice="bash ~/Documents/Programas/Shell/ffslice.sh"
+alias whatsapp="echo 'https://wa.me/5562999529997' | xsel -ib"
 
 #source "/home/supervedovatto/Documents/Programas/Shell/measure_data_rate.sh"

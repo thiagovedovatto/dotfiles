@@ -1,5 +1,6 @@
 [window]
-decorations="None"
+decorations="full"
+decorations_theme_variant = "Light" # "Dark"
 opacity=0.8
 startup_mode="Fullscreen"
 
@@ -14,10 +15,14 @@ import = [
 live_config_reload = true
 
 [font]
-size=16
+normal.family = "OverpassM Nerd Font Propo"
+bold.family = "OverpassM Nerd Font Propo"
+italic.family = "OverpassM Nerd Font Propo"
+bold_italic.family = "OverpassM Nerd Font Propo"
+size=14
 
-[font.normal]
-family="Overpass Mono"
+#[font.normal]
+#family="Overpass Mono"
 
 [terminal.shell]
 program = "tmux"

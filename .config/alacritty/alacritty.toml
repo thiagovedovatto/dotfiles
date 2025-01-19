@@ -15,14 +15,11 @@ import = [
 live_config_reload = true
 
 [font]
-normal.family = "OverpassM Nerd Font Propo"
-bold.family = "OverpassM Nerd Font Propo"
-italic.family = "OverpassM Nerd Font Propo"
-bold_italic.family = "OverpassM Nerd Font Propo"
-size=14
-
-#[font.normal]
-#family="Overpass Mono"
+normal.family = "OverpassM Nerd Font Mono"
+bold.family = "OverpassM Nerd Font Mono"
+italic.family = "OverpassM Nerd Font Mono"
+bold_italic.family = "OverpassM Nerd Font Mono"
+size=16
 
 [terminal.shell]
 program = "tmux"

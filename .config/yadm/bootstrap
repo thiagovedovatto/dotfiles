@@ -4,22 +4,22 @@ sudo apt autoremove
 
 sudo apt install pcmanfm -y
 sudo apt install terminator -y
+sudo apt install git -y
+sudo apt install cmake g++ pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3 -y
+sudo apt install tmux -y
+sudo apt install curl -y
+sudo apt install shellcheck -y
 
 # Instalação do Oh My Bash
-sudo apt install curl
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 
 # Dependências do Alacritty
-sudo apt install cmake g++ pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
-sudo apt install tmux
 sudo add-apt-repository ppa:aslatter/ppa -y
-sudo apt install alacritty
+sudo apt install alacritty -y
 
 # Importar os temas do alacritty
-mkdir -p ~/.config/alacritty/themes
-git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+mkdir -p ~/.config/alacritty/
+git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/
 
 # Plugins do Tmux
-sudo apt install git
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-

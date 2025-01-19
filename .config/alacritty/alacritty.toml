@@ -4,7 +4,13 @@ opacity=0.8
 startup_mode="Fullscreen"
 
 [general]
-import = ["~/.config/alacritty/themes/themes/gruvbox_light.toml"]
+import = [
+  #"~/.config/alacritty/themes/gruvbox_light.toml"
+  "~/.config/alacritty/themes/catppuccin_latte.toml"
+  # "~/.config/alacritty/themes/catppuccin-frappe.toml"
+  # "~/.config/alacritty/themes/catppuccin-macchiato.toml"
+  # "~/.config/alacritty/themes/catppuccin-mocha.toml"
+]
 live_config_reload = true
 
 [font]

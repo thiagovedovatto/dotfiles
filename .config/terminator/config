@@ -6,14 +6,65 @@
 [keybindings]
 [profiles]
   [[default]]
+    background_color = "#eff1f5"
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_shape = ibeam
+    cursor_color = "#dc8a78"
+    font = OverpassM Nerd Font Semi-Bold 14
+    foreground_color = "#4c4f69"
+    show_titlebar = False
+    palette = "#5c5f77:#d20f39:#40a02b:#df8e1d:#1e66f5:#ea76cb:#179299:#acb0be:#6c6f85:#d20f39:#40a02b:#df8e1d:#1e66f5:#ea76cb:#179299:#bcc0cc"
+    use_system_font = False
+  [[default_Catppuccin_Latte]]
     background_color = "#fdf6e3"
     background_darkness = 0.85
     background_type = transparent
+    cursor_shape = ibeam
     cursor_color = "#aaaaaa"
+    font = OverpassM Nerd Font Semi-Bold 14
     foreground_color = "#657b83"
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+  [[Catppuccin_Frappe]]
+    background_color = "#303446"
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_shape = ibeam
+    cursor_color = "#f2d5cf"
+    font = OverpassM Nerd Font Semi-Bold 14
+    foreground_color = "#c6d0f5"
+    palette = "#51576d:#e78284:#a6d189:#e5c890:#8caaee:#f4b8e4:#81c8be:#b5bfe2:#626880:#e78284:#a6d189:#e5c890:#8caaee:#f4b8e4:#81c8be:#a5adce"
+    use_system_font = False
+  [[Catppuccin_Macchiato]]
+    background_color = "#24273a"
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_shape = ibeam
+    cursor_color = "#f4dbd6"
+    font = OverpassM Nerd Font Semi-Bold 14
+    foreground_color = "#cad3f5"
+    palette = "#494d64:#ed8796:#a6da95:#eed49f:#8aadf4:#f5bde6:#8bd5ca:#b8c0e0:#5b6078:#ed8796:#a6da95:#eed49f:#8aadf4:#f5bde6:#8bd5ca:#a5adcb"
+    use_system_font = False
+  [[Catppuccin_Mocha]]
+    background_color = "#1e1e2e"
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_shape = ibeam
+    cursor_color = "#f5e0dc"
+    font = OverpassM Nerd Font Semi-Bold 14
+    foreground_color = "#cdd6f4"
+    palette = "#45475a:#f38ba8:#a6e3a1:#f9e2af:#89b4fa:#f5c2e7:#94e2d5:#bac2de:#585b70:#f38ba8:#a6e3a1:#f9e2af:#89b4fa:#f5c2e7:#94e2d5:#a6adc8"
+    use_system_font = False
 [layouts]
   [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+  [[Catppuccin_Latte]]
     [[[window0]]]
       type = Window
       parent = ""

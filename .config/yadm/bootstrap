@@ -16,7 +16,7 @@ sudo apt install btop -y
 ###############################################
 # Faz o download ou atualiza a coleção de fontes
 FONT_DIR="$HOME/.fonts"
-REPO_URL="https://github.com/thiagovedovatto/myfonts"
+REPO_URL="git@github.com:thiagovedovatto/myfonts.git"
 
 # Verifica se o diretório de fontes existe
 if [[ -d $FONT_DIR ]]; then

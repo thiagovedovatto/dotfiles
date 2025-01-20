@@ -9,6 +9,7 @@ sudo apt install cmake g++ pkg-config libfreetype6-dev libfontconfig1-dev libxcb
 sudo apt install tmux -y
 sudo apt install curl -y
 sudo apt install shellcheck -y
+sudo apt install btop -y
 
 # Faz o download da minha coleção de fontes
 git clone https://github.com/thiagovedovatto/myfonts ~/.fonts
@@ -31,3 +32,11 @@ git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 mkdir -p ~/.config/tmux/plugins/catppuccin
 git clone https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin
+
+# Install catppuccin in gnome-terminal
+curl -L https://raw.githubusercontent.com/catppuccin/gnome-terminal/v1.0.0/install.py | python3 -
+
+# Install catppuccin in btop
+git clone https://github.com/catppuccin/btop ~/Downloads/tmp
+mv ~/Downloads/tmp/themes/* ~/.config/btop/themes
+rm -rf ~/Downloads/tmp/*

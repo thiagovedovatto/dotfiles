@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo apt update
 sudo apt upgrade -y
 sudo apt autoremove
@@ -11,11 +13,30 @@ sudo apt install curl -y
 sudo apt install shellcheck -y
 sudo apt install btop -y
 
-# Faz o download da minha coleção de fontes
-git clone https://github.com/thiagovedovatto/myfonts ~/.fonts
+###############################################
+# Faz o download ou atualiza a coleção de fontes
+FONT_DIR="$HOME/.fonts"
+REPO_URL="https://github.com/thiagovedovatto/myfonts"
+
+# Verifica se o diretório de fontes existe
+if [[ -d $FONT_DIR ]]; then
+  # Verifica se o diretório é um repositório Git
+  if [[ -d $FONT_DIR/.git ]]; then
+    # Atualiza o repositório
+    git -C $FONT_DIR pull
+  else
+    # Caso o diretório não seja um repositório Git, remove e faz o clone novamente
+    rm -rf $FONT_DIR
+    git clone $REPO_URL $FONT_DIR
+  fi
+else
+  # Clona o repositório se o diretório não existir
+  git clone $REPO_URL $FONT_DIR
+fi
 
 # Atualiza o cache de fontes
 sudo fc-cache -vf
+################################################
 
 # Instalação do Oh My Bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"

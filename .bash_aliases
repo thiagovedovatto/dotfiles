@@ -25,7 +25,7 @@ alias open="xdg-open"
 alias CleanLaTexAuxiliaryFiles='bash ~/Documents/Programas/Shell/myscripts/CleanAuxiliaryLaTexFiles.sh'
 alias KO='systemctl poweroff'
 alias suspend='systemctl suspend'
-alias top="htop"
+alias top="btop"
 alias ran="ranger"
 
 # configuration files aliases

@@ -1,63 +1,125 @@
 #!/bin/bash
 
-sudo apt update
-sudo apt upgrade -y
-sudo apt autoremove
+# Função para atualizar o sistema
+atualizar_sistema() {
+  printf "Atualizando a lista de pacotes e realizando a atualização do sistema...\n"
+  sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
+}
 
-sudo apt install pcmanfm -y
-sudo apt install terminator -y
-sudo apt install git -y
-sudo apt install cmake g++ pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3 -y
-sudo apt install tmux -y
-sudo apt install curl -y
-sudo apt install shellcheck -y
-sudo apt install btop -y
+# Função para instalar pacotes essenciais
+instalar_pacotes_essenciais() {
+  local pacotes=(
+    btop
+    cmake
+    curl
+    g++
+    git
+    libfontconfig1-dev
+    libfreetype6-dev
+    libxcb-xfixes0-dev
+    libxkbcommon-dev
+    pcmanfm
+    pkg-config
+    python3
+    shellcheck
+    terminator
+    tmux
+  )
+  
+  printf "Instalando pacotes essenciais...\n"
+  sudo apt install -y "${pacotes[@]}"
+  printf "Todos os pacotes foram instalados com sucesso!\n"
+}
 
-###############################################
-# Faz o download ou atualiza a coleção de fontes
-FONT_DIR="$HOME/.fonts"
-REPO_URL="git@github.com:thiagovedovatto/myfonts.git"
+# Função para gerenciar fontes
+gerenciar_fontes() {
+  local home_dir="/home/supervedovatto"
+  local font_dir="$home_dir/.fonts"
+  local repo_url="git@github.com:thiagovedovatto/myfonts.git"
 
-# Verifica se o diretório de fontes existe
-if [[ -d $FONT_DIR ]]; then
-  # Verifica se o diretório é um repositório Git
-  if [[ -d $FONT_DIR/.git ]]; then
-    # Atualiza o repositório
-    git -C $FONT_DIR pull
+  # Verifica e atualiza ou clona o repositório de fontes
+  if [[ -d $font_dir ]]; then
+    if [[ -d $font_dir/.git ]]; then
+      git -C "$font_dir" pull
+    else
+      rm -rf "$font_dir"
+      git clone "$repo_url" "$font_dir"
+    fi
   else
-    # Caso o diretório não seja um repositório Git, remove e faz o clone novamente
-    rm -rf $FONT_DIR
-    git clone $REPO_URL $FONT_DIR
+    git clone "$repo_url" "$font_dir"
   fi
-else
-  # Clona o repositório se o diretório não existir
-  git clone $REPO_URL $FONT_DIR
-fi
 
-# Atualiza o cache de fontes
-sudo fc-cache -vf
-################################################
+  # Atualiza o cache de fontes
+  sudo fc-cache -vf
+}
 
-# Instalação do Oh My Bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+# Função para instalar ou atualizar o Oh My Bash
+instalar_oh_my_bash() {
+  if [[ -d ~/.oh-my-bash ]]; then
+    source $OSH/tools/upgrade.sh
+  else
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+  fi
+}
 
-# Dependências do Alacritty
-sudo add-apt-repository ppa:aslatter/ppa -y
-sudo apt install alacritty -y
+# Função para instalar o Alacritty
+instalar_alacritty() {
+  if ! command -v alacritty &>/dev/null; then
+    sudo add-apt-repository ppa:aslatter/ppa -y
+    sudo apt install alacritty -y
+  else
+    echo "Alacritty já está instalado!"
+  fi
+}
 
-# Importar os temas do alacritty
-mkdir -p ~/.config/alacritty/
-git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/
+# Função para importar temas do Alacritty
+importar_temas_alacritty() {
+  if [[ ! -d ~/.config/alacritty ]]; then
+    mkdir -p ~/.config/alacritty/
+    git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/
+  fi
+}
 
-# Plugins do Tmux
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-mkdir -p ~/.config/tmux/plugins/catppuccin
-git clone https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin
+# Função para instalar plugins do Tmux
+instalar_plugins_tmux() {
+  if [[ ! -d ~/.tmux/plugins/tpm ]]; then
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  fi
 
-# Install catppuccin in gnome-terminal
-curl -L https://raw.githubusercontent.com/catppuccin/gnome-terminal/v1.0.0/install.py | python3 -
+  if [[ ! -d ~/.config/tmux/plugins/catppuccin ]]; then
+    mkdir -p ~/.config/tmux/plugins/catppuccin
+    git clone https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin
+  fi
+}
 
-# Install catppuccin in btop
-git clone https://github.com/catppuccin/btop ~/Downloads/tmp
-mv ~/Downloads/tmp/themes/* ~/.config/btop/themes
-rm -rf ~/Downloads/tmp/*
+# Função para instalar o tema Catppuccin no btop
+instalar_tema_catppuccin_btop() {
+  if [[ ! -d ~/.config/btop/themes ]]; then
+    git clone https://github.com/catppuccin/btop ~/.config/btop/themes
+  else
+    git clone https://github.com/catppuccin/btop ~/Downloads/tmp
+    mv ~/Downloads/tmp/themes/* ~/.config/btop/themes
+    rm -rf ~/Downloads/tmp
+  fi
+}
+
+# Função para instalar o tema Catppuccin no Gnome Terminal
+instalar_tema_catppuccin_gnome_terminal() {
+  curl -L https://raw.githubusercontent.com/catppuccin/gnome-terminal/v1.0.0/install.py | python3 -
+}
+
+# Função principal para executar o processo
+main() {
+ # atualizar_sistema
+ # instalar_pacotes_essenciais
+ # gerenciar_fontes
+ # instalar_oh_my_bash
+ # instalar_alacritty
+ # importar_temas_alacritty
+ # instalar_plugins_tmux
+ # instalar_tema_catppuccin_btop
+ # instalar_tema_catppuccin_gnome_terminal
+}
+
+# Chama a função principal
+main

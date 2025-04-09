@@ -25,6 +25,7 @@
     enable_tabline_filetype_icon = false
     enable_statusline_mode = false
     statusline_unicode = false
+    automatic_update = false  # Disable automatic checks for updates
     # Enable vim compatible mode, avoid changing origin vim key bindings
     vimcompatible = true
 

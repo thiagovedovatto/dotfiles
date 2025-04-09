@@ -34,18 +34,18 @@
     auto_completion_return_key_behavior = "complete"
     auto_completion_tab_key_behavior = "cycle"
 
-[[layers]]
-    name = 'shell'
-    default_position = 'top'
-    default_height = 30
+#[[layers]]
+#    name = 'shell'
+#    default_position = 'top'
+#    default_height = 30
 
-[[layers]]
-    name = "lang#markdown"
+#[[layers]]
+#    name = "lang#markdown"
 
-[[custom_plugins]]
-    repo = "vimwiki/vimwiki"
-    merged = false
+#[[custom_plugins]]
+#    repo = "vimwiki/vimwiki"
+#    merged = false
 
-[[custom_plugins]]
-    repo = "mattn/calendar-vim"
-    merged = false
+#[[custom_plugins]]
+#    repo = "mattn/calendar-vim"
+#    merged = false

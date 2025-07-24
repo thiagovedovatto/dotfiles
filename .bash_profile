@@ -15,7 +15,7 @@ export GPGKEY=supervedovatto
 ## pass
 export PASSWORD_STORE_CLIP_TIME=60
 
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 export LC_CTYPE=pt_BR.UTF-8
 

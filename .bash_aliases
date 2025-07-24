@@ -1,8 +1,8 @@
 #!/bin/bash
 #==============================================================================
 #  DESCRIPTION: Definição dos aliases usados no terminal
-#         BUGS: 
-#        NOTES: 
+#         BUGS:
+#        NOTES:
 #       AUTHOR: Thiago VedoVatto
 # ORGANIZATION: Instituto Federal de Goiás
 #      CREATED: 29.09.18
@@ -10,14 +10,14 @@
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto --human-readable'
-    alias dir='dir --color=auto --human-readable'
-    alias vdir='vdir --color=auto --human-readable'
+  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+  alias ls='ls --color=auto --human-readable'
+  alias dir='dir --color=auto --human-readable'
+  alias vdir='vdir --color=auto --human-readable'
 
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+  alias grep='grep --color=auto'
+  alias fgrep='fgrep --color=auto'
+  alias egrep='egrep --color=auto'
 fi
 
 #commands
@@ -27,39 +27,30 @@ alias KO='systemctl poweroff'
 alias suspend='systemctl suspend'
 alias top="btop"
 alias ran="ranger"
+alias vim="nvim"
 
 # configuration files aliases
 #alias aliases="vim ~/.bash_aliases"
-alias aliases="vim ~/.bash_aliases"
-alias bashrc="vim ~/.bashrc"
-alias taskrc="vim ~/.task/taskrc"
-alias mappings="vim ~/.vim/myconfig/mappings.vim"
-alias mylinux="vim  ~/Documents/Programas/Shell/mylinux.sh"
-alias mypackages="vim ~/Documents/Programas/Shell/mypackages.sh"
-alias myvariables="vim ~/Documents/Programas/Shell/myvariables.sh"
-alias myRlibraries="vim ~/Documents/Programas/Rlanguage/mylibraries.R"
+alias aliases="nvim ~/.bash_aliases"
+alias bashrc="nvim ~/.bashrc"
+alias taskrc="nvim ~/.task/taskrc"
 alias mybash="sudo bash ~/Documents/Programas/Shell/mybash.sh"
-alias urls="vim ~/.newsboat/urls"
 alias podboat="cd ~/Music && podboat --autodownload"
-alias pythonafter="vim ~/.vim/after/ftplugin/python.vim"
-alias pythonvim="vim ~/.vim/ftplugin/python.vim"
 alias python='python3'
-alias rafter="vim ~/.vim/after/ftplugin/r.vim"
-alias rvim="vim ~/.vim/ftplugin/r.vim"
-alias texvim="vim ~/.vim/ftplugin/tex.vim"
-alias vimrc="vim ~/.vim/vimrc"
-alias muttrc="vim ~/.mutt/muttrc"
+alias texvim="nvim ~/.vim/ftplugin/tex.vim"
+alias vimrc="nvim ~/.vim/vimrc"
+alias muttrc="nvim ~/.mutt/muttrc"
 alias mynotes="ranger ~/Documents/MyNotes"
 alias livroc1="zathura ~/Documents/Artigos/S/Stewart-Calculovolume1-2013.pdf"
 #alias abook="abook --datafile ~/Documents/addressbook"
 #alias i3config="vim ~/.config/i3/config"
 #alias i3blocksconfig="vim ~/.config/i3blocks/config"
-alias gvimrc="vim ~/.vim/gvimrc"
+alias gvimrc="nvim ~/.vim/gvimrc"
 alias vimconfigs="vim ~/Documents/Programas/config/vim/pluginsconfigs/CommonConfigs.vim"
 #alias vifmrc="vim ~/Documents/Programas/config/vifm/vifmrc"
 alias vimdir="cd ~/.vim"
 alias nvimdir="cd ~/.config/nvim"
-alias nvimrc="vim ~/.config/nvim/init.vim"
+alias nvimrc="nvim ~/.config/nvim/init.vim"
 #alias nvim="./opt/neovim/nvim.appimage"
 #alias vundle="vim ~/.vim/myconfig/vundle.vim"
 #alias julia="/opt/julia/bin/julia"
@@ -105,51 +96,51 @@ alias gatsbyinstall="vim /home/supervedovatto/Documents/Programas/Shell/installs
 
 ## COMPRESSION FUNCTION ##
 compress() {
-    FILE=$1
-    shift
-    case $FILE in
-        *.tar.bz2) tar cjf $FILE $*  ;;
-        *.tar.gz)  tar czf $FILE $*  ;;
-        *.tgz)     tar czf $FILE $*  ;;
-        *.tar.xz)  tar cJf $FILE $*  ;;
-        *.txz)     tar cJf $FILE $*  ;;
-        *.zip)     zip $FILE $*      ;;
-        *.xz)      xz $FILE $*      ;;
-        *.rar)     rar $FILE $*      ;;
-        *)         echo "Filetype not recognized" ;;
-   esac
+  FILE=$1
+  shift
+  case $FILE in
+  *.tar.bz2) tar cjf $FILE $* ;;
+  *.tar.gz) tar czf $FILE $* ;;
+  *.tgz) tar czf $FILE $* ;;
+  *.tar.xz) tar cJf $FILE $* ;;
+  *.txz) tar cJf $FILE $* ;;
+  *.zip) zip $FILE $* ;;
+  *.xz) xz $FILE $* ;;
+  *.rar) rar $FILE $* ;;
+  *) echo "Filetype not recognized" ;;
+  esac
 }
 
 ## EXTRACT FUNCTION ##
-extract () {
-    if [ -f $1 ] ; then
-        case $1 in
-            *.tar.bz2)   tar xjf $1     ;;
-            *.tar.gz)    tar xzf $1     ;;
-            *.tgz)       tar xzf $1     ;;
-            *.tar.xz)    tar xJf $1     ;;
-            *.txz)       tar xJf $1     ;;
-            *.bz2)       bunzip2 $1     ;;
-            *.rar)       unrar e $1     ;;
-            *.gz)        gunzip $1      ;;
-            *.tar)       tar xf $1      ;;
-            *.tbz2)      tar xjf $1     ;;
-            *.zip)       unzip $1       ;;
-            *.Z)         uncompress $1  ;;
-            *.7z)        7z x $1        ;;
-            *)     echo "'$1' cannot be extracted via extract()" ;;
-        esac
-    else
-        echo "'$1' is not a valid file"
-    fi
+extract() {
+  if [ -f $1 ]; then
+    case $1 in
+    *.tar.bz2) tar xjf $1 ;;
+    *.tar.gz) tar xzf $1 ;;
+    *.tgz) tar xzf $1 ;;
+    *.tar.xz) tar xJf $1 ;;
+    *.txz) tar xJf $1 ;;
+    *.bz2) bunzip2 $1 ;;
+    *.rar) unrar e $1 ;;
+    *.gz) gunzip $1 ;;
+    *.tar) tar xf $1 ;;
+    *.tbz2) tar xjf $1 ;;
+    *.zip) unzip $1 ;;
+    *.Z) uncompress $1 ;;
+    *.7z) 7z x $1 ;;
+    *) echo "'$1' cannot be extracted via extract()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
 }
 
 #curl minimal apps
 alias tempo="curl wttr.in"
 alias rates="curl rates.sx"
-cheatsheet () {
-   #Função para obter um cheatsheet online
-   curl cheat.sh/$1;
+cheatsheet() {
+  #Função para obter um cheatsheet online
+  curl cheat.sh/$1
 }
 
 alias awsbackup="bash ~/Documents/Programas/BackupScripts/aws_backups.sh"

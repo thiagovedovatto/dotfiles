@@ -6,9 +6,13 @@ atualizar_sistema() {
   sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 }
 
+instalar_brew() {
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+}
+
 # Função para instalar pacotes essenciais
 instalar_pacotes_essenciais() {
-  local pacotes=(
+  local pacotes_apt=(
     btop
     cmake
     curl
@@ -19,18 +23,34 @@ instalar_pacotes_essenciais() {
     libxcb-xfixes0-dev
     libxkbcommon-dev
     pcmanfm
+    fish
     pkg-config
     python3
     shellcheck
+    npm
+    nodejs
     terminator
     ripgrep
-    fzf
     luarocks
     tmux
   )
 
+  local pacotes_brew=(
+    neovim
+    fzf
+    luarocks
+    markdown-toc
+    markdownlint-cli2
+    viu
+    chafa
+    julia
+    rust
+    fd
+  )
+
   printf "Instalando pacotes essenciais...\n"
-  sudo apt install -y "${pacotes[@]}"
+  sudo apt install -y "${pacotes_apt[@]}"
+  brew install "${pacotes_brew[@]}"
   printf "Todos os pacotes foram instalados com sucesso!\n"
 }
 
@@ -113,8 +133,9 @@ instalar_tema_catppuccin_gnome_terminal() {
 
 # Função principal para executar o processo
 main() {
-  # atualizar_sistema
+  atualizar_sistema
   instalar_pacotes_essenciais
+  # instalar_brew
   # gerenciar_fontes
   # instalar_oh_my_bash
   # instalar_alacritty

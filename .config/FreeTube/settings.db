@@ -3,7 +3,7 @@
 {"_id":"bounds","value":{"x":0,"y":56,"width":1920,"height":1024,"maximized":false,"fullScreen":true}}
 {"_id":"channelsHidden","value":"[{\"name\":\"UCWFovw8iyHBezTmaEWEV0RA\",\"preferredName\":\"Adrenalina Freezone BR\",\"icon\":\"https://yt3.googleusercontent.com/6wDl5M2LQpF7KFcDHxBZVMx_LuK9lxDRFdQWLnvX-xcD7kyHkO0RaX2Z1gOQeXYJ8UUtVs-UMw=s48-c-k-c0x00ffffff-no-rj\",\"iconHref\":\"/channel/UCWFovw8iyHBezTmaEWEV0RA\"},{\"name\":\"UCKDjjeeBmdaiicey2nImISw\",\"preferredName\":\"Brasil Paralelo\",\"icon\":\"https://yt3.googleusercontent.com/bfo3JYgwO_BZzCfyy3lRz5hmAVn2uqR7ol0hBujyAcymFQTk1yJtg0NbeMDWa8dafxK8TS5qf1Y=s48-c-k-c0x00ffffff-no-rj\",\"iconHref\":\"/channel/UCKDjjeeBmdaiicey2nImISw\"},{\"name\":\"UCxiwU16NR_q9kng2BXKSQbQ\",\"preferredName\":\"Mauro Fagundes\",\"icon\":\"https://yt3.googleusercontent.com/EhalIjs2tScJHGS0vxhqreWgfXzSYP-B43_mS1SrMIUhCe6PJZkPA5OQovkxDZi_9XHxJyd9yaY=s48-c-k-c0x00ffffff-no-rj\",\"iconHref\":\"/channel/UCxiwU16NR_q9kng2BXKSQbQ\"},{\"name\":\"UCLaMCBgiFbdv9V_IceZljMg\",\"preferredName\":\"Trilho da Sabedoria\",\"icon\":\"https://yt3.googleusercontent.com/G0P8BCAukav3SGCR37ubGOGBaHyOOvTHwkisk7Xz1omRm4eOCkw16bgFL72P7xR3UKTVg9a4sg=s48-c-k-c0x00ffffff-no-rj\",\"iconHref\":\"/channel/UCLaMCBgiFbdv9V_IceZljMg\"},{\"name\":\"UC528dEuPWfebYyRxiYvdA7g\",\"preferredName\":\"Respeita a Geografia - Prof. Éder Diego\",\"icon\":\"https://yt3.googleusercontent.com/ytc/AIdro_l9wWi8xMgO78iCtZf0GkKtwzJHbpWlFTDP4ZK-iNombw=s48-c-k-c0x00ffffff-no-rj\",\"iconHref\":\"/channel/UC528dEuPWfebYyRxiYvdA7g\"},{\"name\":\"UCvBM1cCiadu8FmnybscD6tA\",\"preferredName\":\"Mark Avila\",\"icon\":\"https://yt3.googleusercontent.com/UvpdOJ-qfHyQ84uAsFH4XGfE5ZnUe_mgMKtMQy-SK5CJq2GNXWIMbYnvfAALuZ_89-5spslH=s48-c-k-c0x00ffffff-no-rj\",\"iconHref\":\"/channel/UCvBM1cCiadu8FmnybscD6tA\"}]"}
 {"_id":"currentLocale","value":"en-US"}
-{"_id":"defaultInvidiousInstance","value":"http://zzlsbhhfvwg3oh36tcvx4r7n6jrw7zibvyvfxqlodcwn3mfrvzuq.b32.i2p"}
+{"_id":"defaultInvidiousInstance","value":"http://inv.nadekonw7plitnjuawu6ytjsl7jlglk2t6pyq6eftptmiv3dvqndwvyd.onion"}
 {"_id":"defaultQuality","value":"1080"}
 {"_id":"downloadBehavior","value":"download"}
 {"_id":"externalPlayer","value":"mpv"}
@@ -30,5 +30,5 @@
 {"_id":"playNextVideo","value":false}
 {"_id":"proxyProtocol","value":"https"}
 {"_id":"region","value":"BR"}
-{"_id":"useProxy","value":false}
+{"_id":"useProxy","value":true}
 {"_id":"useRssFeeds","value":true}

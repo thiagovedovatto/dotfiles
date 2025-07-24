@@ -23,9 +23,12 @@ instalar_pacotes_essenciais() {
     python3
     shellcheck
     terminator
+    ripgrep
+    fzf
+    luarocks
     tmux
   )
-  
+
   printf "Instalando pacotes essenciais...\n"
   sudo apt install -y "${pacotes[@]}"
   printf "Todos os pacotes foram instalados com sucesso!\n"
@@ -110,15 +113,15 @@ instalar_tema_catppuccin_gnome_terminal() {
 
 # Função principal para executar o processo
 main() {
- # atualizar_sistema
- # instalar_pacotes_essenciais
- # gerenciar_fontes
- # instalar_oh_my_bash
- # instalar_alacritty
- # importar_temas_alacritty
- # instalar_plugins_tmux
- # instalar_tema_catppuccin_btop
- # instalar_tema_catppuccin_gnome_terminal
+  # atualizar_sistema
+  instalar_pacotes_essenciais
+  # gerenciar_fontes
+  # instalar_oh_my_bash
+  # instalar_alacritty
+  # importar_temas_alacritty
+  # instalar_plugins_tmux
+  # instalar_tema_catppuccin_btop
+  # instalar_tema_catppuccin_gnome_terminal
 }
 
 # Chama a função principal

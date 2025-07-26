@@ -16,36 +16,37 @@ instalar_pacotes_essenciais() {
     btop
     cmake
     curl
+    fish
     g++
     git
     libfontconfig1-dev
     libfreetype6-dev
     libxcb-xfixes0-dev
     libxkbcommon-dev
+    luarocks
+    nodejs
+    npm
     pcmanfm
-    fish
     pkg-config
     python3
-    shellcheck
-    npm
-    nodejs
-    terminator
     ripgrep
-    luarocks
+    shellcheck
+    terminator
     tmux
   )
 
   local pacotes_brew=(
-    neovim
+    chafa
+    fd
     fzf
+    julia
+    lazygit
     luarocks
     markdown-toc
     markdownlint-cli2
-    viu
-    chafa
-    julia
+    neovim
     rust
-    fd
+    viu
   )
 
   printf "Instalando pacotes essenciais...\n"

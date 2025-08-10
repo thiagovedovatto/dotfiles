@@ -19,7 +19,7 @@ normal.family = "OverpassM Nerd Font Mono"
 bold.family = "OverpassM Nerd Font Mono"
 italic.family = "OverpassM Nerd Font Mono"
 bold_italic.family = "OverpassM Nerd Font Mono"
-size=12
+size=14
 
 [terminal.shell]
 program = "tmux"

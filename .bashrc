@@ -146,3 +146,4 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias ohmybash="mate ~/.oh-my-bash"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+source ~/Documents/Programas/Shell/myscripts/unblocksite.sh

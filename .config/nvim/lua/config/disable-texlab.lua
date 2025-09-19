@@ -11,7 +11,7 @@ return {
 
   -- Prevent mason-lspconfig from trying to auto-install it
   {
-    "williamboman/mason-lspconfig.nvim",
+    "mason-org/mason-lspconfig.nvim",
     opts = {
       ensure_installed = function(servers)
         servers.texlab = nil

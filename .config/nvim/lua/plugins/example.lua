@@ -10,15 +10,15 @@ if true then return {} end
 -- * override the configuration of LazyVim plugins
 return {
   -- add gruvbox
-  --  { "ellisonleao/gruvbox.nvim" },
+  { "ellisonleao/gruvbox.nvim" },
 
   -- Configure LazyVim to load gruvbox
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "gruvbox",
-  --   },
-  -- },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "gruvbox",
+    },
+  },
 
   -- change trouble config
   {
@@ -121,26 +121,19 @@ return {
     opts = {
       ensure_installed = {
         "bash",
-        "css",
         "html",
+        "javascript",
         "json",
         "lua",
         "markdown",
         "markdown_inline",
-        "norg",
-        "plaintex",
         "python",
         "query",
         "regex",
-        "scss",
-        "tex",
         "tsx",
-        "typst",
+        "typescript",
         "vim",
-        "vue",
         "yaml",
-        --        "javascript",
-        --        "typescript",
       },
     },
   },
